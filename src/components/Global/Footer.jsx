@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "@/components/Global/Link";
 
 export default function Footer() {
@@ -12,7 +11,7 @@ export default function Footer() {
                 >
             text Me
             </a>
-            <div className="text-sm text-gray-500">hey <Link text="Tina" href="https://github.com/Tina-Mai" />, I used your template because I loved it so much, hope you don't mind and thank you</div>
+            <div className="text-sm text-gray-500">hey <Link text="Tina" href="https://github.com/Tina-Mai" />, I used your template because I loved it so much, hope you don&apos;t mind and thank you</div>
         </footer>
     );
 }

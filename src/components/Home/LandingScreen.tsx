@@ -2,7 +2,6 @@ import { useRef } from "react";
 
 import Cursor from "../Global/Cursor";
 import StarGrid from "./StarGridGSAP";
-import { div } from "motion/react-client";
 
 export default function LandingScreen({ handleUnlock }: { handleUnlock: () => void }) {
     const container = useRef(null);
