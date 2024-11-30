@@ -25,13 +25,13 @@ export default function Home() {
                     />
                     <div className="grid text-left sm:mb-0 sm:w-1/5 xs:grid-cols-1 gap-10">
                         <Problems />
+                        <Publications />
                     </div>
                     <div className="grid text-left sm:mb-0 sm:w-1/5 xs:grid-cols-1 gap-10">
                         <Current />
                     </div>
                     <div className="grid text-left sm:mb-0 sm:w-1/5 xs:grid-cols-1 gap-10">
                         <Past />
-                        <Publications />
                     </div>
                 </div>
             </main>
