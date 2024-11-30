@@ -20,7 +20,7 @@ const Item2 = () => (
 const Item3 = () => (
 	<motion.li variants={animations.itemVariants}>
 		<p className="text-slate-500">03</p>
-		gave language models memory before RAG existed & when context windows were short af @ Theros AI
+		gave language models memory before RAG existed & when context windows were short af
 	</motion.li>
 );
 
