@@ -1,7 +1,7 @@
 import ScrambleText from "@/components/Global/ScrambleText";
 import { motion } from "framer-motion";
 import { animations } from "@/assets/animations";
-import CurrentList from "@/components/Home/Current/CurrentList";
+import CurrentList from "@/components/Home/NonTechnical/Current/CurrentList";
 
 const Current = () => {
 	return (

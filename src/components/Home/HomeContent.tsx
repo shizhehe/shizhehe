@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
-import Current from "@/components/Home/Current/Current";
-import Personal from "@/components/Home/Personal";
-import Problems from "@/components/Home/Problems/Problems";
-import Past from "@/components/Home/Past/Past";
-import Publications from "./Publications/Publications";
+import Current from "@/components/Home/NonTechnical/Current/Current";
+import Personal from "@/components/Home/NonTechnical/Personal";
+import Problems from "@/components/Home/NonTechnical/Problems/Problems";
+import Past from "@/components/Home/NonTechnical/Past/Past";
+import Publications from "@/components/Home/NonTechnical/Publications/Publications";
 
 export default function HomeContent() {
     return (

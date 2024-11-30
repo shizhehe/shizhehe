@@ -21,11 +21,23 @@ const Personal = () => {
 					</motion.li>
 
 					<motion.li variants={animations.itemVariants} className="body">
-						<div className="mb-1">LANGUAGES I SPEAK</div>
+						<ScrambleText className="mb-2" text="LANGUAGES I SPEAK" settings={{ speed: 1 }} />
                         <div>english</div>
                         <div>german</div>
                         <div>chinese</div>
                         <div>(french)</div>
+					</motion.li>
+
+					<motion.li variants={animations.itemVariants} className="body">
+						<ScrambleText className="mb-2" text="MORE LANGUAGES I SPEAK" settings={{ speed: 1 }} />
+                        <div>machine learning</div>
+                        <div>representation learning</div>
+						<div>graph neural networks</div>
+						<div>ranking & pricing systems</div>
+                        <div>neurmorphic computing</div>
+                        <div>OS systems</div>
+						<div>AWS</div>
+						<ScrambleText text="and more" settings={{ speed: 1 }} />
 					</motion.li>
 
 					{/* social links */}

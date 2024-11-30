@@ -1,7 +1,7 @@
 import ScrambleText from "@/components/Global/ScrambleText";
 import { motion } from "framer-motion";
 import { animations } from "@/assets/animations";
-import PublicationList from "@/components/Home/Publications/PublicationList";
+import PublicationList from "@/components/Home/NonTechnical/Publications/PublicationList";
 
 const Publications = () => {
 	return (

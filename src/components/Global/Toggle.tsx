@@ -16,7 +16,7 @@ const Toggle = ({ isChecked, setIsChecked }: { isChecked: boolean; setIsChecked:
           onChange={handleCheckboxChange}
           className='sr-only'
         />
-        <ScrambleText text="Switch Context" className='mr-[18px] text-sm font-medium text-black' settings={{ speed: 1 }} />
+        <ScrambleText text="click me to switch context" className='mr-[18px] text-sm font-medium text-black' settings={{ speed: 1 }} />
         <div className='shadow-card flex h-[46px] w-[82px] items-center justify-center rounded-md bg-white border-[1.5px] border-gray-300'>
           <span
             className={`flex h-9 w-9 items-center justify-center rounded ${

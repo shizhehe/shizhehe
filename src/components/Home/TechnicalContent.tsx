@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
-import Current from "@/components/Home/Current/Current";
-import Personal from "@/components/Home/Personal";
-import Problems from "@/components/Home/Problems/Problems";
-import Past from "@/components/Home/Past/Past";
-import Publications from "./Publications/Publications";
+import Current from "@/components/Home/Technical/Current/Current";
+import Personal from "@/components/Home/Technical/Personal";
+import Problems from "@/components/Home/Technical/Problems/Problems";
+import Past from "@/components/Home/Technical/Past/Past";
+import Publications from "@/components/Home/Technical/Publications/Publications";
 
 export default function TechnicalContent() {
     return (
@@ -27,7 +27,6 @@ export default function TechnicalContent() {
                     </div>
                     <div className="grid text-left sm:mb-0 sm:w-1/5 xs:grid-cols-1 gap-5">
                         <Current />
-                        <Past />
                     </div>
                     <div className="grid text-left sm:mb-0 sm:w-1/5 xs:grid-cols-1 gap-5">
                         <Past />
