@@ -1,0 +1,51 @@
+import React from "react";
+import Image from "next/image";
+import ScrambleText from "@/components/Global/ScrambleText";
+import { links } from "@/assets/links";
+import { animations } from "@/assets/animations"
+import { motion } from "framer-motion";
+import Link from "@/components/Global/Link";
+
+const Personal = () => {
+	return (
+		<div className="space-y-10">
+			<ScrambleText text="building excavators for the future of computing in AI." settings={{ speed: 1 }} />
+
+			<motion.div animate={{ opacity: 1, x: 0 }}>
+				<motion.ul variants={animations.containerVariants} initial="hidden" animate="show" className="space-y-10">
+					<motion.li variants={animations.itemVariants} className="body">
+						<ScrambleText text="shizhehe@stanford.edu" />
+					</motion.li>
+					<motion.li variants={animations.itemVariants}>
+						<Image src="/profile.jpg" alt="Shizhe He - Startup Founder and Developer" height={180} width={180} quality={85} priority={true} itemProp="image" />
+					</motion.li>
+
+					<motion.li variants={animations.itemVariants} className="body">
+						<div className="mb-1">LANGUAGES I SPEAK</div>
+                        <div>english</div>
+                        <div>german</div>
+                        <div>chinese</div>
+                        <div>(french)</div>
+					</motion.li>
+
+					{/* social links */}
+					<div className="space-y-3">
+						<motion.li variants={animations.itemVariants} className="body">
+							<div>FIND ME</div>
+						</motion.li>
+						<div className="sm:block sm:-space-y-5 flex flex-wrap">
+							{links.map((social, index) => (
+								<motion.li variants={animations.itemVariants} key={social.name}>
+									<Link text={social.name} href={social.url} className="pr-2 space-x-1" />
+									{index < links.length - 1 && <p className="pr-2 sm:pr-0 sm:invisible sm:block inline">•</p>}
+								</motion.li>
+							))}
+						</div>
+					</div>
+				</motion.ul>
+			</motion.div>
+		</div>
+	);
+};
+
+export default Personal;

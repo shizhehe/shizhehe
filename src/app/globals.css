@@ -1,16 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind variants
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #171717;
+  --foreground: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #eae6e4;
+    --foreground: #0a0a0a;
   }
 }
 
@@ -18,4 +19,26 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+	.body {
+		@apply text-[10pt];
+	}
+	.link {
+		@apply underline underline-offset-4 decoration-dotted decoration-slate-500 transition-colors hover:underline;
+	}
+}
+
+@layer utilities {
+	.text-balance {
+		text-wrap: balance;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation: none !important;
+		transition: none !important;
+	}
 }
