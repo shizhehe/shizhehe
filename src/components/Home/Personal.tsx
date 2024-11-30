@@ -14,7 +14,7 @@ const Personal = () => {
 			<motion.div animate={{ opacity: 1, x: 0 }}>
 				<motion.ul variants={animations.containerVariants} initial="hidden" animate="show" className="space-y-10">
 					<motion.li variants={animations.itemVariants} className="body">
-						<ScrambleText text="shizhehe@stanford.edu" />
+						<Link text="shizhehe@stanford.edu" href="mailto:shizhehe@stanford.edu" />
 					</motion.li>
 					<motion.li variants={animations.itemVariants}>
 						<Image src="/profile.jpg" alt="Shizhe He - Startup Founder and Developer" height={180} width={180} quality={85} priority={true} itemProp="image" />

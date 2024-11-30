@@ -1,40 +1,29 @@
-import { motion } from "framer-motion";
-
-import Current from "@/components/Home/Current/Current";
-import Personal from "@/components/Home/Personal";
-import Problems from "@/components/Home/Problems/Problems";
-import Past from "@/components/Home/Past/Past";
-import Publications from "./Publications/Publications";
 import CursorDark from "@/components/Global/CursorDark";
+import HomeContent from "@/components/Home/HomeContent";
+import TechnicalContent from "@/components/Home/TechnicalContent";
+import Toggle from "@/components/Global/Toggle";
+import { useState, useEffect } from "react";
 
 export default function Home() {
+    const [isTechnicalMode, setIsTechnicalMode] = useState(false);
+    const [isSwitching, setIsSwitching] = useState(false);
+
+    useEffect(() => {
+        setIsSwitching(true);
+        setTimeout(() => setIsSwitching(false), 1000); // Duration of the animation
+    }, [isTechnicalMode]);
+
     return (
         <div>
             <CursorDark />
-            <main className="flex min-h-screen flex-col items-center justify-between p-20 sm:p-8">
-                <div className="z-10 w-full max-w-7xl items-start justify-between sm:flex">
-                    <div className="sm:w-1/5 max-w-xs pb-20">
-                        <Personal />
-                    </div>
-                    {/* divider line that only shows up on xs screens like mobile */}
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 1.5 }}
-                        className="sm:invisible sm:w-0 sm:mt-0 sm:mb-0 -mt-10 mb-10 w-full border-b border-slate-500"
-                    />
-                    <div className="grid text-left sm:mb-0 sm:w-1/5 xs:grid-cols-1 gap-10">
-                        <Problems />
-                        <Publications />
-                    </div>
-                    <div className="grid text-left sm:mb-0 sm:w-1/5 xs:grid-cols-1 gap-10">
-                        <Current />
-                    </div>
-                    <div className="grid text-left sm:mb-0 sm:w-1/5 xs:grid-cols-1 gap-10">
-                        <Past />
-                    </div>
+            <div className="absolute top-0 right-0 m-4">
+                <Toggle isChecked={isTechnicalMode} setIsChecked={setIsTechnicalMode} />
+            </div>
+            {isSwitching ? (
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                    <p>context switch (pun intended)</p>
                 </div>
-            </main>
+            ) : isTechnicalMode ? <TechnicalContent /> : <HomeContent />}
         </div>
     );
 }

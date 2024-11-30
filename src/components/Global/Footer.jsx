@@ -2,7 +2,7 @@ import Link from "@/components/Global/Link";
 
 export default function Footer() {
     return (
-        <footer className="absolute inset-x-0 bottom-5 flex flex-col gap-6 items-center justify-center">
+        <footer className="absolute mt-10 inset-x-0 bottom-5 flex flex-col gap-6 items-center justify-center">
             {/* <a
             className="flex items-center gap-2 hover:underline hover:underline-offset-4"
                 href="mailto:shizhehe@stanford.edu"
