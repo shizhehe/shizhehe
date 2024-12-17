@@ -6,7 +6,7 @@ import Link from "@/components/Global/Link";
 const Item1 = () => (
 	<motion.li variants={animations.itemVariants}>
 		<p className="text-slate-500">01</p>
-		studying CS & International Relations @ <Link text="Stanford" href="" />
+		studying CS (ML Systems) & International Relations @ <Link text="Stanford" href="" />
 	</motion.li>
 );
 
@@ -20,17 +20,10 @@ const Item2 = () => (
 const Item3 = () => (
 	<motion.li variants={animations.itemVariants}>
 		<p className="text-slate-500">03</p>
-		building the future of text message marketing @ <Link text="Beacon Text" href="https://getbeacon.co" />
+		superpowering text message marketing with RCS @ <Link text="Beacon Text" href="https://getbeacon.co" />
 	</motion.li>
 );
 
-const Item4 = () => (
-	<motion.li variants={animations.itemVariants}>
-		<p className="text-slate-500">04</p>
-		pushing myself to be physically, psychologically, and socially uncomfortable
-	</motion.li>
-);
-
-const CurrentList = [Item1, Item2, Item3, Item4];
+const CurrentList = [Item1, Item2, Item3];
 
 export default CurrentList;

@@ -24,6 +24,13 @@ const Item3 = () => (
 	</motion.li>
 );
 
-const ProblemList = [Item1, Item2, Item3];
+const Item4 = () => (
+	<motion.li variants={animations.itemVariants}>
+		<p className="text-slate-500">04</p>
+		created better fundraiser representations using text features for one of the largest crowdfunding-platforms @ <Link text="hidwwn" href="" />
+	</motion.li>
+);
+
+const ProblemList = [Item1, Item2, Item3, ];
 
 export default ProblemList;

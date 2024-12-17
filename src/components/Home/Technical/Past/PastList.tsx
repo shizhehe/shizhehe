@@ -10,20 +10,6 @@ const Item1 = () => (
 	</motion.li>
 );
 
-const Item2 = () => (
-	<motion.li variants={animations.itemVariants}>
-		<p className="text-slate-500">02</p>
-		optimized fundraiser goals for one of the largest crowdfunding-platforms (2024)
-	</motion.li>
-);
-
-const Item3 = () => (
-	<motion.li variants={animations.itemVariants}>
-		<p className="text-slate-500">03</p>
-		youngest presenter of all time @ <Link text="ISMRM conference" href="https://blog.ismrm.org/2023/06/02/mrm-highlights-magazine-volume-8/" /> (2022)
-	</motion.li>
-);
-
 const Item4 = () => (
 	<motion.li variants={animations.itemVariants}>
 		<p className="text-slate-500">04</p>
@@ -38,6 +24,6 @@ const Item5 = () => (
 	</motion.li>
 );
 
-const PastList = [Item1, Item2, Item3, Item4, Item5];
+const PastList = [Item1, Item4, Item5];
 
 export default PastList;

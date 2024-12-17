@@ -1,7 +1,7 @@
 import ScrambleText from "@/components/Global/ScrambleText";
 import { motion } from "framer-motion";
 import { animations } from "@/assets/animations";
-import PastList from "@/components/Home/NonTechnical/Past/PastList";
+import PastList from "@/components/Home/Technical/Past/PastList";
 
 const Past = () => {
 	return (

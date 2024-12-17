@@ -22,9 +22,9 @@ const Personal = () => {
 
 					<motion.li variants={animations.itemVariants} className="body">
 						<ScrambleText className="mb-2" text="LANGUAGES I SPEAK" settings={{ speed: 1 }} />
-                        <div>english</div>
-                        <div>german</div>
-                        <div>chinese</div>
+                        <div>rizz</div>
+                        <div>lang</div>
+                        <div>ting</div>
                         <div>(french)</div>
 					</motion.li>
 

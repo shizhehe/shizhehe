@@ -1,7 +1,7 @@
 import ScrambleText from "@/components/Global/ScrambleText";
 import { motion } from "framer-motion";
 import { animations } from "@/assets/animations";
-import ProblemList from "@/components/Home/NonTechnical/Problems/ProblemList";
+import ProblemList from "@/components/Home/Technical/Problems/ProblemList";
 
 const Problems = () => {
 	return (

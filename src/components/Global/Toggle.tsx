@@ -9,14 +9,14 @@ const Toggle = ({ isChecked, setIsChecked }: { isChecked: boolean; setIsChecked:
 
   return (
     <>
-      <label className='themeSwitcherThree relative inline-flex cursor-pointer select-none items-center'>
+      <label className='themeSwitcherThree relative inline-flex cursor-pointer select-none items-center mb-[20px]'>
         <input
           type='checkbox'
           checked={isChecked}
           onChange={handleCheckboxChange}
           className='sr-only'
         />
-        <ScrambleText text="click me to switch context" className='mr-[18px] text-sm font-medium text-black' settings={{ speed: 1 }} />
+        <ScrambleText text="click me to switch context" className='z-10 mr-[18px] text-sm font-medium text-black' settings={{ speed: 1 }} />
         <div className='shadow-card flex h-[46px] w-[82px] items-center justify-center rounded-md bg-white border-[1.5px] border-gray-300'>
           <span
             className={`flex h-9 w-9 items-center justify-center rounded ${
