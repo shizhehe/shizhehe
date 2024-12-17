@@ -31,6 +31,6 @@ const Item4 = () => (
 	</motion.li>
 );
 
-const ProblemList = [Item1, Item2, Item3, ];
+const ProblemList = [Item1, Item2, Item3, Item4];
 
 export default ProblemList;
