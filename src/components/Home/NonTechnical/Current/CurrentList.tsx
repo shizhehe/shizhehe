@@ -20,7 +20,7 @@ const Item2 = () => (
 const Item3 = () => (
 	<motion.li variants={animations.itemVariants}>
 		<p className="text-slate-500">03</p>
-		building the future of text message marketing @ <Link text="Beacon Text" href="https://getbeacon.co" />
+		helping out as venture fellow @ <Link text="NEA" href="https://nea.com/" />
 	</motion.li>
 );
 

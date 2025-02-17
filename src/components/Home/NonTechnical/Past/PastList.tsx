@@ -6,7 +6,7 @@ import Link from "@/components/Global/Link";
 const Item1 = () => (
 	<motion.li variants={animations.itemVariants}>
 		<p className="text-slate-500">01</p>
-		building as part of <Link text="Keel 1.0" href="https://www.keel.club/" /> (2024) & <Link text="Pear Garage" href="https://pear.vc/garage/" /> (2023)
+		built first RCS platform for text message marketing @ <Link text="Beacon Text" href="https://getbeacon.co" /> as part of <Link text="Keel 1.0" href="https://www.keel.club/" /> (2024) & <Link text="Pear Garage" href="https://pear.vc/garage/" /> (2023)
 	</motion.li>
 );
 
