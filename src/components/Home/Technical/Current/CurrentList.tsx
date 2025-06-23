@@ -13,7 +13,7 @@ const Item1 = () => (
 const Item2 = () => (
 	<motion.li variants={animations.itemVariants}>
 		<p className="text-slate-500">02</p>
-		researching knowledge systems on neuromorphic chips @ <Link text="Brains in Silicon" href="https://web.stanford.edu/group/brainsinsilicon/" />
+		helping AI agents collaborate and communicate with each other better @ <Link text="Hazy Research" href="https://hazyresearch.stanford.edu/" />
 	</motion.li>
 );
 

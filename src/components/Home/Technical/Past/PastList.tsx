@@ -10,6 +10,13 @@ const Item1 = () => (
 	</motion.li>
 );
 
+const Item2 = () => (
+	<motion.li variants={animations.itemVariants}>
+		<p className="text-slate-500">02</p>
+		researched knowledge systems on neuromorphic chips @ <Link text="Brains in Silicon" href="https://web.stanford.edu/group/brainsinsilicon/" />
+	</motion.li>
+);
+
 const Item4 = () => (
 	<motion.li variants={animations.itemVariants}>
 		<p className="text-slate-500">04</p>
@@ -24,6 +31,6 @@ const Item5 = () => (
 	</motion.li>
 );
 
-const PastList = [Item1, Item4, Item5];
+const PastList = [Item1, Item2, Item4, Item5];
 
 export default PastList;
