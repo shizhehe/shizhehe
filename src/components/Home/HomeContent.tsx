@@ -21,12 +21,12 @@ export default function HomeContent() {
                         transition={{ delay: 1.5 }}
                         className="sm:invisible sm:w-0 sm:mt-0 sm:mb-0 -mt-10 mb-10 w-full border-b border-slate-500"
                     />
-                    <div className="grid text-left sm:mb-5 sm:w-1/5 xs:grid-cols-1 gap-5">
-                        <Problems />
-                        <Publications />
-                    </div>
                     <div className="grid text-left sm:mb-0 sm:w-1/5 xs:grid-cols-1 gap-5">
                         <Current />
+                        <Publications />
+                    </div>
+                    <div className="grid text-left sm:mb-5 sm:w-1/5 xs:grid-cols-1 gap-5">
+                        <Problems />
                     </div>
                     <div className="grid text-left sm:mb-0 sm:w-1/5 xs:grid-cols-1 gap-5">
                         <Past />

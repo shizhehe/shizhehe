@@ -9,7 +9,7 @@ import Link from "@/components/Global/Link";
 const Personal = () => {
 	return (
 		<div className="space-y-10">
-			<ScrambleText text="building excavators for the future of computing in AI." settings={{ speed: 1 }} />
+			<ScrambleText text="i want to make incremental improvements in research and technology feel like magic to users." settings={{ speed: 1 }} />
 
 			<motion.div animate={{ opacity: 1, x: 0 }}>
 				<motion.ul variants={animations.containerVariants} initial="hidden" animate="show" className="space-y-10">

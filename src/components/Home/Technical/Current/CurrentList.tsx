@@ -20,7 +20,7 @@ const Item2 = () => (
 const Item3 = () => (
 	<motion.li variants={animations.itemVariants}>
 		<p className="text-slate-500">03</p>
-		helping out as venture fellow @ <Link text="NEA" href="https://nea.com/" />
+		trying to do hard things physically, psychologically, and socially
 	</motion.li>
 );
 

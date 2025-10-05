@@ -13,7 +13,7 @@ const Item1 = () => (
 const Item2 = () => (
 	<motion.li variants={animations.itemVariants}>
 		<p className="text-slate-500">02</p>
-		streamlined semiconductor design & verification process @ <Link text="Infineon" href="https://www.infineon.com/" />
+		streamlined semiconductor design & verification processes @ <Link text="Infineon" href="https://www.infineon.com/" />
 	</motion.li>
 );
 
@@ -27,10 +27,17 @@ const Item3 = () => (
 const Item4 = () => (
 	<motion.li variants={animations.itemVariants}>
 		<p className="text-slate-500">04</p>
-		created better fundraiser representations using text features for one of the largest crowdfunding-platforms @ <Link text="hidwwn" href="" />
+		created better latent fundraiser representations using text features for one of the largest crowdfunding-platforms
 	</motion.li>
 );
 
-const ProblemList = [Item1, Item2, Item3, Item4];
+const Item5 = () => (
+	<motion.li variants={animations.itemVariants}>
+		<p className="text-slate-500">05</p>
+		built and deployed multi-index search engine, interior design assistant, and other recommendation systems for art @ <Link text="Artue" href="https://www.artue.io/" />
+	</motion.li>
+);
+
+const ProblemList = [Item1, Item2, Item3, Item4, Item5];
 
 export default ProblemList;

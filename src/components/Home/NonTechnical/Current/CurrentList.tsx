@@ -13,24 +13,18 @@ const Item1 = () => (
 const Item2 = () => (
 	<motion.li variants={animations.itemVariants}>
 		<p className="text-slate-500">02</p>
-		researching new chips to make AI knowledge retrieval super fast @ <Link text="Brains in Silicon" href="https://web.stanford.edu/group/brainsinsilicon/" />
+		researching local/remote paradigms for complex agentic systems @ <Link text="Hazy Research" href="https://hazyresearch.stanford.edu/" />
 	</motion.li>
 );
 
-const Item3 = () => (
-	<motion.li variants={animations.itemVariants}>
-		<p className="text-slate-500">03</p>
-		helping out as venture fellow @ <Link text="NEA" href="https://nea.com/" />
-	</motion.li>
-);
 
 const Item4 = () => (
 	<motion.li variants={animations.itemVariants}>
-		<p className="text-slate-500">04</p>
-		pushing myself to be physically, psychologically, and socially uncomfortable
+		<p className="text-slate-500">03</p>
+		trying to do hard things physically, psychologically, and socially
 	</motion.li>
 );
 
-const CurrentList = [Item1, Item2, Item3, Item4];
+const CurrentList = [Item1, Item2, Item4];
 
 export default CurrentList;

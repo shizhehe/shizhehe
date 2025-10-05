@@ -3,24 +3,24 @@ import { motion } from "framer-motion";
 import { animations } from "@/assets/animations";
 import Link from "@/components/Global/Link";
 
-const Item1 = () => (
+const Item0 = () => (
 	<motion.li variants={animations.itemVariants}>
 		<p className="text-slate-500">01</p>
-		built first RCS platform for text message marketing @ <Link text="Beacon Text" href="https://getbeacon.co" /> as part of <Link text="Keel 1.0" href="https://www.keel.club/" /> (2024) & <Link text="Pear Garage" href="https://pear.vc/garage/" /> (2023)
+		helped out as venture fellow @ <Link text="NEA" href="https://nea.com/" /> (2025)
+	</motion.li>
+);
+
+const Item1 = () => (
+	<motion.li variants={animations.itemVariants}>
+		<p className="text-slate-500">02</p>
+		built first RCS platform for text message marketing @ Beacon Text as part of <Link text="Pear Garage" href="https://pear.vc/garage/" /> (2023)
 	</motion.li>
 );
 
 const Item2 = () => (
 	<motion.li variants={animations.itemVariants}>
-		<p className="text-slate-500">02</p>
-		optimized fundraiser goals for one of the largest crowdfunding-platforms (2024)
-	</motion.li>
-);
-
-const Item3 = () => (
-	<motion.li variants={animations.itemVariants}>
 		<p className="text-slate-500">03</p>
-		youngest presenter of all time @ <Link text="ISMRM conference" href="https://blog.ismrm.org/2023/06/02/mrm-highlights-magazine-volume-8/" /> (2022)
+		optimized fundraiser goals for one of the largest crowdfunding-platforms (2024)
 	</motion.li>
 );
 
@@ -38,6 +38,6 @@ const Item5 = () => (
 	</motion.li>
 );
 
-const PastList = [Item1, Item2, Item3, Item4, Item5];
+const PastList = [Item0, Item1, Item2, Item4, Item5];
 
 export default PastList;

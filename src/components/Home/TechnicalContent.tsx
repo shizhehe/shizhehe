@@ -22,11 +22,11 @@ export default function TechnicalContent() {
                         className="sm:invisible sm:w-0 sm:mt-0 sm:mb-0 -mt-10 mb-10 w-full border-b border-slate-500"
                     />
                     <div className="grid text-left sm:mb-5 sm:w-1/5 xs:grid-cols-1 gap-5">
-                        <Problems />
+                        <Current />
                         <Publications />
                     </div>
                     <div className="grid text-left sm:mb-0 sm:w-1/5 xs:grid-cols-1 gap-5">
-                        <Current />
+                        <Problems />
                     </div>
                     <div className="grid text-left sm:mb-0 sm:w-1/5 xs:grid-cols-1 gap-5">
                         <Past />
