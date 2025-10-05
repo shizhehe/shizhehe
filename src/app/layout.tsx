@@ -6,7 +6,7 @@ const fira_code = Fira_Code({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Shizhe He",
-  description: "Shizhe He is an 20-year-old startup founder and researcher building energy-effienct computing paradigms. He is recognized for his past research in Healthcare AI and contracting for various tech and e-commerce companies. He studies computer science and international relations at Stanford.",
+  description: "Shizhe He is a senior undergraduate student studying computer science and international relations at Stanford.",
   keywords: ["shizhe he", "shizhe", "he", "stanford", "startup", "founder", "building", "engineer", "neuromorphics", "machine learning", "ai", "computer science", "neuromorphic computing"],
 	authors: [{ name: "Shizhe He" }],
 	creator: "Shizhe He",
