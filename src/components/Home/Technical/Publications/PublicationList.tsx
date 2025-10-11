@@ -10,7 +10,7 @@ const Item0 = () => {
   return (
     <motion.li variants={animations.itemVariants}>
       <p className="text-slate-500">01</p>
-      An Information Theoretic Perspective on Agentic System Design @ <Link text="Hazy Research" href="https://www.hazyresearch.stanford.edu/" /> submitted to ICLR 2026
+      An Information Theoretic Perspective on Agentic System Design @ <Link text="Hazy Research" href="https://hazyresearch.stanford.edu/" /> submitted to ICLR 2026
       <div className="authors mt-3" onClick={() => setShowAllAuthors(!showAllAuthors)}>
         <span>
           {authors.slice(0, 2).join(", ")}
