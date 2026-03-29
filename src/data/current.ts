@@ -17,13 +17,7 @@ export const currentItems: ContentItem[] = [
   {
     id: "current-2",
     number: "02",
-    summary:
-      "researching local/remote paradigms for complex agentic systems @ Hazy Research",
-    detail:
-      "helping AI agents collaborate and communicate with each other better @ Hazy Research",
-    links: [
-      { text: "Hazy Research", href: "https://hazyresearch.stanford.edu/" },
-    ],
+    summary: "teaching machines @ stealth",
   },
   {
     id: "current-3",

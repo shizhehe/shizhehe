@@ -8,21 +8,32 @@ export interface ContentItem {
 
 export const pastItems: ContentItem[] = [
   {
-    id: "past-1",
+    id: "past-0",
     number: "01",
+    summary:
+      "researched local/remote paradigms for complex agentic systems @ Hazy Research",
+    detail:
+      "helped AI agents collaborate and communicate with each other better @ Hazy Research",
+    links: [
+      { text: "Hazy Research", href: "https://hazyresearch.stanford.edu/" },
+    ],
+  },
+  {
+    id: "past-1",
+    number: "02",
     summary: "helped out as venture fellow @ NEA (2025)",
     links: [{ text: "NEA", href: "https://nea.com/" }],
   },
   {
     id: "past-2",
-    number: "02",
+    number: "03",
     summary:
       "built first RCS platform for text message marketing @ Beacon Text as part of Pear Garage (2023)",
     links: [{ text: "Pear Garage", href: "https://pear.vc/garage/" }],
   },
   {
     id: "past-3",
-    number: "03",
+    number: "04",
     summary:
       "optimized fundraiser goals for one of the largest crowdfunding-platforms (2024)",
     detail:
@@ -36,7 +47,7 @@ export const pastItems: ContentItem[] = [
   },
   {
     id: "past-4",
-    number: "04",
+    number: "05",
     summary: "won CodeVsCovid19 Hackathon with AI to detect COVID-19 coughs (2021)",
     links: [
       {
