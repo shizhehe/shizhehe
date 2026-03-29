@@ -14,6 +14,7 @@ export const publicationItems: PublicationItem[] = [
     id: "pub-1",
     number: "01",
     title: "An Information Theoretic Perspective on Agentic System Design",
+    href: "https://arxiv.org/abs/2512.21720",
     venue: "Hazy Research",
     venueHref: "https://hazyresearch.stanford.edu/",
     authors: [
