@@ -92,18 +92,16 @@ export default function HeroCanvas({ text, containerRef }: HeroCanvasProps) {
       fontSizeRef.current = fontSize;
       const lineHeight = fontSize * LINE_HEIGHT_FACTOR;
 
-      // Scroll-driven width compression (only after typing finishes)
+      // Scroll-driven width compression — only kicks in after 60% scrolled
+      // so the text stays stable while the hero is in full view
       const maxWidthFull = w - PADDING_X * 3;
       const maxWidthCompressed = maxWidthFull * 0.35;
       const effectiveScrollT = typingDone ? scrollT : 0;
-      const maxWidth = lerp(
-        maxWidthFull,
-        maxWidthCompressed,
-        effectiveScrollT * 2.5
-      );
+      const compressionT = Math.max(0, (effectiveScrollT - 0.6) / 0.4);
+      const maxWidth = lerp(maxWidthFull, maxWidthCompressed, compressionT);
 
       const blockX = PADDING_X;
-      const blockY = h * lerp(PADDING_Y_TOP, 0.08, effectiveScrollT);
+      const blockY = h * lerp(PADDING_Y_TOP, 0.08, Math.max(0, effectiveScrollT - 0.3));
 
       // Clear
       ctx.clearRect(0, 0, w, h);
